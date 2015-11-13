@@ -27,7 +27,7 @@ struct syn_table{
 struct syntab_key {
     int addr;
     unsigned short port;
-};
+} __attribute__((packed));
 
 #define GET_SYNTAB() (&syntab)
 
